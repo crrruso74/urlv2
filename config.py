@@ -37,7 +37,7 @@ LOG_CHANNEL = int(
 )  # log channel for information about users
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", False)  # For Force Subscription
 BROADCAST_AS_COPY = is_enabled(
-    (os.environ.get("BROADCAST_AS_COPY", "False")), False
+    (os.environ.get("BROADCAST_AS_COPY", "True")), False
 )  # true if forward should be avoided
 IS_PRIVATE = is_enabled(
     os.environ.get("IS_PRIVATE", "False"), "False"
@@ -87,8 +87,8 @@ REPLIT = (
 )
 
 #  Koyeb Config for Hosting in Koyeb
-KOYEB_USERNAME = os.environ.get("KOYEB_USERNAME", None)  # your koyeb username
-KOYEB_APP_NAME = os.environ.get("KOYEB_APP_NAME", None)  # your koyeb app name
+KOYEB_USERNAME = os.environ.get("KOYEB_USERNAME", URL-Shortener-V2)  # your koyeb username
+KOYEB_APP_NAME = os.environ.get("KOYEB_APP_NAME", url-cnvrt)  # your koyeb app name
 KOYEB = (
     f"https://{KOYEB_APP_NAME}-{KOYEB_USERNAME}.koyeb.app/"
     if KOYEB_APP_NAME and KOYEB_USERNAME
