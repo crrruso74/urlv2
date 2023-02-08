@@ -40,7 +40,7 @@ BROADCAST_AS_COPY = is_enabled(
     (os.environ.get("BROADCAST_AS_COPY", "True")), False
 )  # true if forward should be avoided
 IS_PRIVATE = is_enabled(
-    os.environ.get("IS_PRIVATE", "False"), "False"
+    os.environ.get("IS_PRIVATE", "False"), "True"
 )  # true for private use and restricting users
 SOURCE_CODE = os.environ.get(
     "SOURCE_CODE", "https://github.com/kevinnadar22/URL-Shortener-V2"
@@ -87,8 +87,8 @@ REPLIT = (
 )
 
 #  Koyeb Config for Hosting in Koyeb
-KOYEB_USERNAME = os.environ.get("KOYEB_USERNAME", URL-Shortener-V2)  # your koyeb username
-KOYEB_APP_NAME = os.environ.get("KOYEB_APP_NAME", url-cnvrt)  # your koyeb app name
+KOYEB_USERNAME = os.environ.get("KOYEB_USERNAME", "URL-Shortener-V2")  # your koyeb username
+KOYEB_APP_NAME = os.environ.get("KOYEB_APP_NAME", "url-short")  # your koyeb app name
 KOYEB = (
     f"https://{KOYEB_APP_NAME}-{KOYEB_USERNAME}.koyeb.app/"
     if KOYEB_APP_NAME and KOYEB_USERNAME
